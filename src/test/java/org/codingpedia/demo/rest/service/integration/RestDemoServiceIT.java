@@ -32,7 +32,7 @@ public class RestDemoServiceIT {
 		Client client = ClientBuilder.newClient(clientConfig);
 
 		WebTarget webTarget = client
-				.target("http://localhost:8888/demo-rest-spring-jersey-tomcat-mybatis-0.0.1-SNAPSHOT/podcasts/");
+				.target("http://localhost:8080/demo-rest-spring-jersey-tomcat-mybatis-0.0.1-SNAPSHOT/podcasts/");
 
 		Builder request = webTarget.request();
 		request.header("Content-type", MediaType.APPLICATION_JSON);
@@ -62,7 +62,7 @@ public class RestDemoServiceIT {
 		Client client = ClientBuilder.newClient(clientConfig);
 
 		WebTarget webTarget = client
-				.target("http://localhost:8888/demo-rest-spring-jersey-tomcat-mybatis-0.0.1-SNAPSHOT/podcasts/2");
+				.target("http://localhost:8080/demo-rest-spring-jersey-tomcat-mybatis-0.0.1-SNAPSHOT/podcasts/2");
 
 		Builder request = webTarget.request(MediaType.APPLICATION_JSON);
 
